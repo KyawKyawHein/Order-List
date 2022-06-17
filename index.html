@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order</title>
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <div class="order-con mt-5">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h1 class="text-primary">Order List</h1>
+                        <div class="new-list bg-primary p-2 px-3 rounded text-light"><i class="feather-plus"></i></div>
+                    </div>
+                    <table class="table table-striped table-bordered table-responsive ">
+                        <thead>
+                            <tr>
+                                <td>#</td>
+                                <td>Item Name</td>
+                                <td>Amount</td>
+                                <td>Quantity</td>
+                                <td>Total</td>
+                            </tr>
+                        </thead>
+                        <tbody id="tBody">
+                            <tr class="t-row">
+                                <td>1</td>
+                                <td style="width: 300px;" class="p-0 name-row"><input type="text" class="form-control name" autofocus required placeholder="Enter the item name"></td>
+                                <td style="width: 200px;" class="p-0 amount-row"><input type="number" min="100" class="form-control amount" required placeholder="Enter the amount"></td>
+                                <td style="width: 200px;" class="p-0 quantity-row"><input type="number" min="1" max="100" class="form-control quantity" value="1" required placeholder="Enter the quantity"></td>
+                                <td class="total">0</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4" class="text-center">Total</td>
+                                <td class="total-calc">0</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="../vendor/jquery/jquery.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

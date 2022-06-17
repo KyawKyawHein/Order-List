@@ -1,0 +1,9 @@
+.new-list{
+    cursor: pointer;
+}
+tr td:last-child{
+    text-align: right;
+}
+tr td:first-child{
+    text-align: center;
+}
